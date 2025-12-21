@@ -9,5 +9,5 @@ export const firebaseConfig = {
   measurementId: "G-6SVYBTXPVM"
 };
 
-// API Base URL
-export const API_BASE_URL = "http://localhost:8000";
+// API Base URL - Use environment variable or fallback to localhost
+export const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
